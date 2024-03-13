@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Course Management</h1>
+    <div class="container">
+        <div class="course-list">
+            <h2>All Courses</h2>
+            <div id="courseList">
+            </div>
+        </div>
+        <div class="add-course">
+            <h2>Add New Course</h2>
+            <form id="addCourseForm">
+                <label for="courseTitle">Course Title:</label><br>
+                <input type="text" id="courseTitle" name="courseTitle" required><br>
+                <label for="courseCode">Course Code:</label><br>
+                <input type="text" id="courseCode" name="courseCode" required><br>
+                <label for="desc">Description:</label><br>
+                <textarea id="desc" name="desc" required></textarea><br>
+                <label for="durationInDays">Duration (in days):</label><br>
+                <input type="number" id="durationInDays" name="durationInDays" required><br>
+                <button type="submit">Add Course</button>
+            </form>
+        </div>
+        <div class="delete-course">
+            <h2>Delete Course</h2>
+            <form id="deleteCourseForm">
+                <label for="courseId">Course ID:</label><br>
+                <input type="number" id="courseId" name="courseId" required><br>
+                <button type="submit">Delete Course</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
